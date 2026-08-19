@@ -1,0 +1,1 @@
+var e=`fivestar_kitchen_orders`,t={getOrders(){let t=localStorage.getItem(e);return t?JSON.parse(t):[]},saveOrders(t){localStorage.setItem(e,JSON.stringify(t))},addOrder(e){let n=[...t.getOrders(),e];return t.saveOrders(n),n},updateStatus(e,n){let r=t.getOrders().map(t=>t.id===e?{...t,status:n}:t);return t.saveOrders(r),r}};export{t};

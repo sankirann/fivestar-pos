@@ -1,0 +1,21 @@
+@import url('https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Hides the scrollbar on horizontally-scrollable nav bars (mobile) while
+   keeping the content scrollable - used across page headers. */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
